@@ -7,63 +7,63 @@ int main()
 {
 	setlocale(0, "");
 	int a, b, c, k, x, x1, x2, D;
-	met1: cout << "Выберите действие : " << endl;
-	cout << "1) Сложение " << endl;
-	cout << "2) Вычитание " << endl;
-	cout << "3) Умножение " << endl;
-	cout << "4) Деление " << endl;
-	cout << "5) Нахождение дискриминанта и его корней " << endl;
-	cout << "6) Выход из программы " << endl;
+	met1: cout << "Chose mode : " << endl;
+	cout << "1) Addition " << endl;
+	cout << "2) Subtraction " << endl;
+	cout << "3) Multiplication " << endl;
+	cout << "4) Division " << endl;
+	cout << "5) Finding the discriminant and its roots " << endl;
+	cout << "6) Exit " << endl;
 	cout << "" << endl;
 	cout << "" << endl;
-	cout << "Калькулятор создан Elmo59ru" << endl;
+	cout << "Created by Elmo59ru" << endl;
 	cin >> k;
 
 	switch (k)
 	{
 	case 1:
-		cout << "Первое число : ";
+		cout << "First Number : ";
 		cin >> a;
-		cout << "Второе число : ";
+		cout << "Second Number : ";
 		cin >> b;
 		c = a + b;
-		cout << "Ответ : " << c << endl;
+		cout << "Answer : " << c << endl;
 		system("pause");
 		goto met1;
 		
 	case 2 :
-		cout << "Первое число : ";
+		cout << "Fires Number : ";
 		cin >> a;
-		cout << "Второе число : ";
+		cout << "Second Number : ";
 		cin >> b;
 		c = a - b;
-		cout << "Ответ : " << c << endl;
+		cout << "Answer : " << c << endl;
 		system("pause");
 		goto met1;
 	case 3:
-		cout << "Первое число : ";
+		cout << "First Number : ";
 		cin >> a;
-		cout << "Второе число :";
+		cout << "Second Number :";
 		cin >> b;
 		c = a * b;
-		cout << "Ответ : " << c << endl;
+		cout << "РћС‚РІРµС‚ : " << c << endl;
 		system("pause");
 		goto met1;
 	case 4:
-		cout << "Первое число : ";
+		cout << "First Number : ";
 		cin >> a;
-		cout << "Второе число : ";
+		cout << "Second Number : ";
 		cin >> b;
 		c = a / b;
-		cout << "Ответ : " << c << endl;
+		cout << "Answer : " << c << endl;
 		system("pause");
 		goto met1;
 	case 5:
-		cout << "Введите число а = ";
+		cout << "Enter number Р° = ";
 		cin >> a;
-		cout << "Введите число b = ";
+		cout << "Enter number b = ";
 		cin >> b;
-		cout << "Введите число с = ";
+		cout << "Enter number СЃ = ";
 		cin >> c;
 		D = (b * b) - (4 * a * c);
 		if (D > 0)
@@ -75,20 +75,20 @@ int main()
 
 			D = sqrt(D);
 
-			cout << "Дискриминант = " << D << endl;
+			cout << "Discriminant = " << D << endl;
 			cout << "x1 = " << x1 << endl;
 			cout << "x2 = " << x2 << endl;
 		}
 		if (D < 0)
 		{
 
-			cout << "Корней нет, т.к дискриминант < 0" << endl;
+			cout << "No roots, because discriminant < 0" << endl;
 		}
 		if (D == 0)
 		{
 			x = -b / 2 * a;
 
-			cout << "Кратный корень = " << x << endl;
+			cout << "Multiple root = " << x << endl;
 		}
 		system("pause");
 		goto met1;
